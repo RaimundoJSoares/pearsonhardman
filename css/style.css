@@ -1,0 +1,107 @@
+:root {
+  --main-color: #d92123;
+  --primary-text-color: #ecf0f1;
+  --secondary-text-color: #191919;
+  --secondary-color: #868686;
+  --tertiary-color: #eff3f4;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+i {
+  background-color: var(--main-color);
+  color: var(--primary-text-color);
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+#header {
+  min-height: 90vh;
+  background-image: url("../img/main_banner4.png");
+  background-size: cover; /*para cobrir toda a imagem, sem se repetir*/
+  background-position: center;
+  color: var(--primary-text-color);
+  margin-bottom: 2rem;
+  position: relative; /*vou usar elementos absolute, o relativo é a area onde controlamos o absoluto*/
+}
+
+#inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*deixa todo mundo alinhado no centro igualmente*/
+}
+
+#brand {
+  background-color: var(--main-color);
+  padding: 1rem;
+}
+
+#navbar {
+  display: flex;
+  margin-right: 2rem;
+  gap: 3rem;
+}
+
+#navbar a {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.banner.active {
+  opacity: 1;
+}
+
+.banner{
+  max-width: 50%; /*para nao ficar com metade da tela ocupada*/
+  
+  position: absolute;
+  padding: 4rem;
+  opacity: 0;
+  
+  /*transition: 0.8s; banner vai aparecer e desaparecer*/
+}
+
+.banner h2 {
+  font-size: 4rem;
+  margin-bottom: 1.2rem;
+
+  position: relative; /*para o z-index funcionar*/
+  z-index: 2;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+}
+
+.square{
+  width: 150px;
+  height: 150px;
+  background-color: var(--main-color);
+  position: absolute;
+
+  display: block;
+  z-index: 1;
+  left: 20px;
+  top: 20px;
+  
+}
