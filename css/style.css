@@ -11,6 +11,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ 
 }
 
 a {
@@ -37,6 +38,7 @@ i {
   background-image: url("../img/main_banner4.png");
   background-size: cover; /*para cobrir toda a imagem, sem se repetir*/
   background-position: center;
+
   color: var(--primary-text-color);
   margin-bottom: 2rem;
   position: relative; /*vou usar elementos absolute, o relativo é a area onde controlamos o absoluto*/
@@ -211,4 +213,100 @@ i {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
+}
+
+/*About*/
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.about-text{
+  background-image: url("../img/pattern.png");
+  background-size: cover;
+  background-position: center;
+
+  color: var(--primary-text-color);
+  flex: 1 1 0;
+  gap: 2rem;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 4rem 3rem;
+}
+
+.about-text .section-subtitle,
+.about-text .section-title {
+  color: var(--primary-text-color);
+}
+
+.about-text i {
+  background-color: transparent;
+}
+
+.about-description {
+  display: flex;
+  align-items: center;
+}
+
+.about-description h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-data{
+  flex: 1 1 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 2rem;
+}
+
+.about-data .data{
+ 
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0.25rem;
+
+  width: calc(50% - 2rem);
+}
+
+.about-data .data:first-child{
+  border-bottom: 10px solid var(--secondary-color);
+  border-right: 10px solid var(--secondary-color);
+}
+
+.about-data .data:last-child{
+  border-top: 10px solid var(--secondary-color);
+  border-left: 10px solid var(--secondary-color);
+}
+
+.about-data .data i {
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 4rem;
+  
+  padding: 0
+}
+
+.data .number {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.data .text {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: bold;
+
 }
