@@ -396,3 +396,66 @@ font-size: 1.2rem;
 margin: 0.5rem 0;
 
 }
+
+/*contato*/
+#contact{
+  background-color: var(--main-color);
+  gap: 0;
+  padding-bottom: 3.5rem;
+}
+
+#contact-information{
+  position: relative;
+  text-align: left;
+  padding: 3rem;
+
+  flex: 1 1 200px;
+}
+
+#contact-information .section-subtitle{
+  color: var(--primary-text-color);
+}
+
+#contact-information i{
+  top: 0;
+  left: 0;
+  position: absolute;
+
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+#contact-information form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact-information .form-control{
+  display: flex;
+  gap: 1rem;
+}
+
+#contact-information input,
+#contact-information textarea{
+  padding: 1rem;
+  border: none;
+  flex: auto;
+  border-radius: 4px;
+}
+
+#contact-information .btn{
+  align-self: flex-start;
+  border: var(--primary-text-color) 2px solid;
+  font-size: 1.2rem;
+
+  border-radius: 8px;
+  transition: 0.3s;
+}
+#contact-information .btn:hover{
+  background-color: var(--primary-text-color);
+  color: var(--main-color);
+}
+.section-subtitle{
+  margin-top:4.5rem;
+}
