@@ -147,12 +147,15 @@ i {
 }
 
 .section-subtitle{
+  
+  font-size: 1.75rem;
   text-transform: uppercase;
   font-weight: bold;
   color: var(--main-color);
 }
 
 .section-title{
+  
   color: var(--secondary-text-color);
   font-size: 2rem;
 }
@@ -183,7 +186,7 @@ i {
 .other-services{
   display: flex;
   gap: 2.5rem;
-  padding: 2.5rem;
+  padding: 2rem;
   width: 100%;
   
 }
@@ -236,6 +239,7 @@ i {
   flex: 1 1 0;
   gap: 2rem;
 
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -628,5 +632,110 @@ margin: 0.5rem 0;
 
   .banner h2{
     font-size: 3rem;
+  }
+
+  .banner p{
+    font-size: 1.25rem;
+  }
+
+  /*areas de atuação*/
+  .btn{
+    align-self: initial;
+  }
+
+  .image-container{
+    flex: 1 1 100%;
+  }
+
+  .other-services{
+    flex-wrap: wrap;
+  }
+
+  /*sobre nós */
+  #about{
+    gap: 0;
+  }
+  #about-text,
+  #about-data {
+    flex: 1 1 100%;
+  }
+
+  .about-description {
+    gap: 1rem;
+  }
+
+  .about-description i {
+    padding: 0;
+    min-width: 40px;
+  }
+
+  #about .about-data .data{
+    width: 100%;
+    border: none;
+
+    border-bottom: 1px solid var(--secondary-text-color);
+  }
+
+  /*depoimentos*/
+
+  .text-container{
+    text-align: center;
+    padding: 2rem;
+  }
+
+  /*colaboradores*/
+  #team{
+    margin-top: 3rem;
+  }
+
+  #team h2{
+    font-size: 2rem;
+  }
+  .employees{
+    flex-wrap: wrap;
+  }
+
+  /*contatos*/
+  #contact{
+    padding-bottom: 0;
+  }
+
+  #contact-information{
+    padding: 3rem 1rem ;
+  }
+  #contact-information .form-control{
+    flex-direction: column;
+  }
+
+  #contact-information .btn{
+    align-self: auto;
+  }
+
+  /*footer*/
+  #footer{
+    flex-wrap: wrap;
+  }
+
+  #footer i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .networks{
+    margin-bottom: 3rem;
+  }
+
+  .links-container{
+    margin-bottom: 1rem;
+  }
+
+  .links-container h4{
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-brand{
+    text-align: center;
+  }
+  .contact-info , .links-container{
+    width: 100%;
   }
 }
