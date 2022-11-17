@@ -10,6 +10,10 @@ const mobileLinks = document.querySelectorAll("#mobile-navbar a")
 //juntar todos os links em um array, usando o spread operator
 const allLinks = [...desktopLinks, ...mobileLinks]
 
+const slides = document.querySelectorAll('.banner')
+const dots = document.querySelectorAll('.dot')
+let slideIndex = 0;
+
 //2--- Funções
 //criar função smooth scroll
 function smoothScroll(event) {
@@ -28,6 +32,21 @@ function smoothScroll(event) {
         }
    
     }, 500)
+}
+
+function ShowSlides(){
+    for(let i = 0; i < slides.length; i++){
+        slides[i].classList.remove('active')
+        dots[i].classList.remove('active')
+    }
+    slideIndex++;
+    if(slideIndex > slides.length){
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].classList.add('active');
+    dots[slideIndex - 1].classList.add('active');
+
+    setTimeout(ShowSlides, 5000);
 }
 
 
@@ -52,14 +71,15 @@ allLinks.map((link) => {
 })
 
 
-const btnScrollToTop = document.querySelector(".btn-top");
+const btnScrollToTop = document.querySelector(".acessibilityScroolTop");
 
 btnScrollToTop.addEventListener("click", function () {
 
     window.scrollTo({
         top: 0,
         left: 0,
-        behavior: "smooth"
+        behavior: "smooth",
     })
 })
 
+ShowSlides()
