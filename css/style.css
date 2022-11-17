@@ -559,8 +559,8 @@ margin: 0.5rem 0;
 }
 
 #menu, #close-menu {
-  font-size: 1rem;
-  padding: 2rem;
+  font-size: 2rem;
+  padding: 1rem;
   display: none;
 }
 
@@ -631,11 +631,11 @@ margin: 0.5rem 0;
   }
 
   .banner h2{
-    font-size: 2.2rem;
+    font-size: 3.5rem;
   }
 
   .banner p{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   /*areas de atuação*/
