@@ -1,7 +1,8 @@
 # Pearson Hardman
 ### Onde você irá ter acesso aos melhores advogados do país, acesse e lutaremos por sua causa.
 
-![image](https://user-images.githubusercontent.com/61881055/202433486-0c813d85-148f-46ab-93cd-cb0f7b98052c.png)
+![image](https://github.com/RaimundoJSoares/pearsonhardman/assets/61881055/285480bb-c767-41c6-9a8f-9496302e3434)
+
 ![image](https://user-images.githubusercontent.com/61881055/202433652-61020e74-b219-480d-b761-d9a9c50aa1be.png)
 ![image](https://user-images.githubusercontent.com/61881055/202433697-9502c858-b0b2-49e3-9b01-2a4c993f8f96.png)
 ![image](https://user-images.githubusercontent.com/61881055/202433867-9a831c42-afd4-40ea-a82a-b9caacfce488.png)
